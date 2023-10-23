@@ -1,0 +1,43 @@
+.icon-hover:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+  }
+  
+  .icon-hover:hover i {
+    color: #3b71ca !important;
+  }
+
+  .image{
+    aspect-ratio: 1 / 1
+  }
+  
+  .background{
+    background-color: #f5f5f5;
+  }
+
+.fit {
+    object-fit: cover;
+}
+
+.para{
+  font-size: 20px;
+}
+
+.wid{
+  width: 100px;
+}
+.back{
+  background-color: #607d8b;
+}
+
+.boxsha{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.boxsha1{
+  background-color: rgba(0, 0, 0, 0.2); text-color: #e0e0e0;
+}
+
+.foot{
+  background-color: #607d8b;
+}

@@ -1,0 +1,7 @@
+body{
+    background:#eee;
+    }
+    .img-thumbnail{
+        border:0px;    
+    }
+    .btn, .input-lg, .alert {border-radius:2px !important;}

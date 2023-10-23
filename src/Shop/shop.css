@@ -1,0 +1,9 @@
+@media (max-width: 767.98px) { .border-sm-start-none { border-left: none !important; } }
+
+.back{
+    background-color: rgba(253, 253, 253, 0.15);
+}
+
+.ground{
+    background-color: #eee;
+}
