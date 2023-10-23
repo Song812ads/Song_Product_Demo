@@ -11,9 +11,6 @@ const Main = () => {
     const navigate = useNavigate();
     useEffect(() => {
         document.title = "Song Demo"
-        if (window.location.href !== "http://localhost:8000/app") {
-            window.location.replace("http://localhost:8000/app")
-        }
     })
 
 

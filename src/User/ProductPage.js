@@ -6,11 +6,7 @@ import Loginout from './Loginout'
 import { useEffect } from 'react'
 const ProductPage = () => {
 
-    const auth = useAuth();
 
-    const state ={
-        host:"http://localhost:8000/app"
-    }
 
     const navigate = useNavigate();
 
