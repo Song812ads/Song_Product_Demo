@@ -9,26 +9,6 @@ import { AuthProvider } from "react-oidc-context";
 const Main = () => {
 
     const navigate = useNavigate();
-
-    const supply_settings = {
-        authority: 'http://localhost:8920/auth/realms/Song_supply',
-        client_secret: 'nVrXPEpgoqMWYFmjeBQDIuhGkoxuWrqx',
-        response_mode: 'query',
-        client_id: 'supply_client',
-        redirect_uri: 'http://localhost:8000/supply',
-        post_logout_redirect_uri: 'http://localhost:8000/app',
-        response_type: 'code',
-        resource_access: {
-            "song_supply": {
-                "roles": [
-                    "supply_client"
-                ]
-            }
-        },
-    }
-
-
-
     useEffect(() => {
         document.title = "Song Demo"
         if (window.location.href !== "http://localhost:8000/app") {
@@ -36,9 +16,6 @@ const Main = () => {
         }
     })
 
-    const state = {
-        host: "http://localhost:8000"
-    }
 
     return (
         <div>
@@ -55,12 +32,12 @@ const Main = () => {
                     <div className="collapse navbar-collapse" id="navmenu">
                         <ul className="navbar-nav ms-auto">
                         
-                                <a href={state.host + "/user"} className="nav-link" >
+                                <a onClick={()=>navigate('../user')} type ="button"className="nav-link" >
                                     USER
                                 </a>
                            
                            
-                                <a href={state.host + "/supply"} className="nav-link" >
+                                <a onClick={()=>navigate('../supply')} type="button" className="nav-link" >
                                     SERVICE
                                 </a>
                           

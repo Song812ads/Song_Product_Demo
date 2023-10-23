@@ -4,17 +4,12 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { useAuth } from 'react-oidc-context';
 import { useNavigate } from 'react-router-dom';
 import AuthSup from './AuthSup';
-import { AuthProvider } from 'react-oidc-context';
 import jwtDecode from 'jwt-decode';
   const SupplierPage = () => {
 
     const auth  = useAuth();
 
     const navigate = useNavigate();
-
-    const state = {
-      host: "http://localhost:8000"
-    }
 
     useEffect (() => {
       document.title = "Supply: Service";
@@ -41,14 +36,14 @@ import jwtDecode from 'jwt-decode';
       <div>
         <nav className="navbar navbar-expand-md navbar-dark bg-success py-2"> 
         <div className = "container"> 
-            <a href={state.host} className="navbar-brand">
+            <a onClick={()=>navigate("/app")} type="button" className="navbar-brand">
               SONG-SERVICE DEMO
             </a>
             
             <div className="collapse navbar-collapse" id="navmenu">
                 <ul className="navbar-nav ms-auto">
                     <div className="nav-item">
-                        <a href={state.host+'/user'} className="nav-link">
+                        <a onClick={()=>navigate('/user')} type="button" className="nav-link">
                             CLIENT
                         </a>
                     </div>
