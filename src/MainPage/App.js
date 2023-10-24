@@ -47,8 +47,8 @@ function App() {
   return(
     <div className="App">    
         <BrowserRouter> 
-          <Routes>
-            <Route path="/Song_Product_Demo" element={<Main />}/>
+          <Routes path="/Song_Product_Demo">
+            <Route path="/app" element={<Main />}/>
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
             <Route path="/user/product" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
             <Route path="/user/pay" element={<AuthProvider {...client_settings}><Thanhtoan/></AuthProvider>}/>
