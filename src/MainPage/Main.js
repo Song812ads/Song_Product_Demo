@@ -29,12 +29,12 @@ const Main = () => {
                     <div className="collapse navbar-collapse" id="navmenu">
                         <ul className="navbar-nav ms-auto">
                         
-                                <a onClick={()=>navigate('../user')} type ="button"className="nav-link" >
+                                <a onClick={()=>navigate('/Song_Product_Demo/user')} type ="button"className="nav-link" >
                                     USER
                                 </a>
                            
                            
-                                <a onClick={()=>navigate('../supply')} type="button" className="nav-link" >
+                                <a onClick={()=>navigate('/Song_Product_Demo/supply')} type="button" className="nav-link" >
                                     SERVICE
                                 </a>
                           
