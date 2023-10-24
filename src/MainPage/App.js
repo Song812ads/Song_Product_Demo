@@ -47,16 +47,16 @@ function App() {
 
   return(
     <div className="App">    
-        <BrowserRouter>
+        <BrowserRouter basename="/Song_Produt_Demo">
           <Routes>
-            <Route path="/Song_Product_Demo" element={<Main />}/>
+            <Route path="" element={<Main />}/>
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
             <Route path="/user/product" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
             <Route path="/user/pay" element={<AuthProvider {...client_settings}><Thanhtoan/></AuthProvider>}/>
-            <Route path="/Song_Product_Demo/supply" element = {<AuthProvider {...supply_settings}><SupplierPage /></AuthProvider>}/>
-            <Route path="/Song_Product_Demo/supply/product" element = {<AuthProvider {...supply_settings}><Product /></AuthProvider>}/>
-            <Route path="/Song_Product_Demo/supply/product/add" element = {<AuthProvider {...supply_settings}><Product_add /></AuthProvider>}/>
-            <Route path="/Song_Product_Demo/supply/product/change/*" element = {<AuthProvider {...supply_settings}><Product_change /></AuthProvider>}/>
+            <Route path="/supply" element = {<AuthProvider {...supply_settings}><SupplierPage /></AuthProvider>}/>
+            <Route path="/supply/product" element = {<AuthProvider {...supply_settings}><Product /></AuthProvider>}/>
+            <Route path="/supply/product/add" element = {<AuthProvider {...supply_settings}><Product_add /></AuthProvider>}/>
+            <Route path="/supply/product/change/*" element = {<AuthProvider {...supply_settings}><Product_change /></AuthProvider>}/>
             {/* <Route path="/Song_Product_Demo/*" element={<Main />}/> */}
           </Routes>
         </BrowserRouter>  
