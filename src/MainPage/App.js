@@ -1,4 +1,4 @@
-import {  Route, HashRouter} from "react-router-dom";
+import {  Route, Routes,BrowserRouter} from "react-router-dom";
 import Main from './Main';
 import SupplierPage from "../Shop/SupplierPage";
 import { AuthProvider } from "react-oidc-context";
@@ -47,8 +47,8 @@ function App() {
 
   return(
     <div className="App">    
-        <React.StrictMode>
-          <HashRouter>
+        <BrowserRouter>
+          <Routes>
             <Route path="" element={<Main />}/>
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
             <Route path="/user/product" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
@@ -58,8 +58,8 @@ function App() {
             <Route path="/supply/product/add" element = {<AuthProvider {...supply_settings}><Product_add /></AuthProvider>}/>
             <Route path="/supply/product/change/*" element = {<AuthProvider {...supply_settings}><Product_change /></AuthProvider>}/>
             {/* <Route path="/Song_Product_Demo/*" element={<Main />}/> */}
-          </HashRouter>
-        </React.StrictMode>  
+          </Routes>
+        </BrowserRouter>  
     </div>
   )
 }
