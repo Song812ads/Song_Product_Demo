@@ -47,7 +47,7 @@ function App() {
 
   return(
     <div className="App">    
-        <BrowserRouter basename="/Song_Produt_Demo">
+        <BrowserRouter basename="/Song_Product_Demo">
           <Routes>
             <Route path="" element={<Main />}/>
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
