@@ -33,8 +33,8 @@ function App() {
     client_secret: 'dgvVF4zg7mIa4NhK57mY7GOoNwxyGjUU',
     response_mode:'query',
     client_id: 'supply_client',
-    redirect_uri: 'http://localhost:8000/supply',
-    post_logout_redirect_uri:'http://localhost:8000/app',
+    redirect_uri: 'https://song812ads.github.io/supply',
+    post_logout_redirect_uri:'https://song812ads.github.io/app',
     response_type: 'code',
     resource_access: {
         "song_supply": {
