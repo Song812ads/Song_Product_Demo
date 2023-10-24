@@ -49,7 +49,7 @@ function App() {
     <div className="App">    
         <React.StrictMode>
           <HashRouter>
-            <Route path="/" element={<Main />}/>
+            <Route path="/Song_Product_Demo" element={<Main />}/>
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
             <Route path="/user/product" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
             <Route path="/user/pay" element={<AuthProvider {...client_settings}><Thanhtoan/></AuthProvider>}/>
