@@ -36,7 +36,7 @@ import jwtDecode from 'jwt-decode';
       <div>
         <nav className="navbar navbar-expand-md navbar-dark bg-success py-2"> 
         <div className = "container"> 
-            <a onClick={()=>navigate("/Song_Product_Demo")} type="button" className="navbar-brand">
+            <a onClick={()=>navigate("/..")} type="button" className="navbar-brand">
               SONG-SERVICE DEMO
             </a>
             
