@@ -1,4 +1,4 @@
-import { React, Route, HashRouter} from "react-router-dom";
+import {  Route, HashRouter} from "react-router-dom";
 import Main from './Main';
 import SupplierPage from "../Shop/SupplierPage";
 import { AuthProvider } from "react-oidc-context";
@@ -8,6 +8,7 @@ import Thanhtoan from "../User/Thanhtoan";
 import Product_add from "../Shop/Product_add";
 import Product from "../Shop/Product";
 import Product_change from "../Shop/Product_change";
+import React from "react";
 
 function App() {
 
