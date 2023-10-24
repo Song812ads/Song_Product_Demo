@@ -46,8 +46,8 @@ function App() {
 
   return(
     <div className="App">    
-        <BrowserRouter> 
-          <Routes >
+        <React.StrictMode>
+          <HashRouter>
             <Route path="/app" element={<Main />}/>
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
             <Route path="/user/product" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
@@ -57,8 +57,8 @@ function App() {
             <Route path="/supply/product/add" element = {<AuthProvider {...supply_settings}><Product_add /></AuthProvider>}/>
             <Route path="/supply/product/change/*" element = {<AuthProvider {...supply_settings}><Product_change /></AuthProvider>}/>
             {/* <Route path="/Song_Product_Demo/*" element={<Main />}/> */}
-          </Routes>
-        </BrowserRouter>  
+          </HashRouter>
+        </React.StrictMode>  
     </div>
   )
 }
