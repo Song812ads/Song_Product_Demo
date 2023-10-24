@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { React, Route, HashRouter} from "react-router-dom";
 import Main from './Main';
 import SupplierPage from "../Shop/SupplierPage";
 import { AuthProvider } from "react-oidc-context";
