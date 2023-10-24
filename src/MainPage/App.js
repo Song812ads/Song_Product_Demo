@@ -16,8 +16,8 @@ function App() {
     client_secret: 'ueBfrRsvZeCDCKx6MuQAwasF9rSqRGKV',
     response_mode:'query',
     client_id: 'song_client',
-    redirect_uri: 'http://localhost:8000/user',
-    post_logout_redirect_uri:'http://localhost:8000/user',
+    redirect_uri: 'https://song812ads.github.io/Song_Product_Demo/user',
+    post_logout_redirect_uri:'https://song812ads.github.io/Song_Product_Demo/user',
     response_type: 'code',
     resource_access: {
       "song_client": {
@@ -33,8 +33,8 @@ function App() {
     client_secret: 'dgvVF4zg7mIa4NhK57mY7GOoNwxyGjUU',
     response_mode:'query',
     client_id: 'supply_client',
-    redirect_uri: 'https://song812ads.github.io/supply',
-    post_logout_redirect_uri:'https://song812ads.github.io/app',
+    redirect_uri: 'https://song812ads.github.io/Song_Product_Demo/supply',
+    post_logout_redirect_uri:'https://song812ads.github.io/Song_Product_Demo/app',
     response_type: 'code',
     resource_access: {
         "song_supply": {
