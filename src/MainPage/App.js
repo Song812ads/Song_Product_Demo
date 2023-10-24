@@ -34,7 +34,7 @@ function App() {
     client_secret: 'dgvVF4zg7mIa4NhK57mY7GOoNwxyGjUU',
     response_mode:'query',
     client_id: 'supply_client',
-    redirect_uri: 'https://song812ads.github.io/supply',
+    redirect_uri: 'https://song812ads.github.io/Song_Product_Demo/supply',
     post_logout_redirect_uri:'https://song812ads.github.io/Song_Product_Demo',
     response_type: 'code',
     resource_access: {
@@ -53,10 +53,10 @@ function App() {
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
             <Route path="/user/product" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
             <Route path="/user/pay" element={<AuthProvider {...client_settings}><Thanhtoan/></AuthProvider>}/>
-            <Route path="/supply" element = {<AuthProvider {...supply_settings}><SupplierPage /></AuthProvider>}/>
-            <Route path="/supply/product" element = {<AuthProvider {...supply_settings}><Product /></AuthProvider>}/>
-            <Route path="/supply/product/add" element = {<AuthProvider {...supply_settings}><Product_add /></AuthProvider>}/>
-            <Route path="/supply/product/change/*" element = {<AuthProvider {...supply_settings}><Product_change /></AuthProvider>}/>
+            <Route path="/Song_Product_Demo/supply" element = {<AuthProvider {...supply_settings}><SupplierPage /></AuthProvider>}/>
+            <Route path="/Song_Product_Demo/supply/product" element = {<AuthProvider {...supply_settings}><Product /></AuthProvider>}/>
+            <Route path="/Song_Product_Demo/supply/product/add" element = {<AuthProvider {...supply_settings}><Product_add /></AuthProvider>}/>
+            <Route path="/Song_Product_Demo/supply/product/change/*" element = {<AuthProvider {...supply_settings}><Product_change /></AuthProvider>}/>
             {/* <Route path="/Song_Product_Demo/*" element={<Main />}/> */}
           </Routes>
         </BrowserRouter>  
