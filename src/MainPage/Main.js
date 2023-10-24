@@ -34,7 +34,7 @@ const Main = () => {
                                 </a>
                            
                            
-                                <a onClick={()=>navigate('/Song_Product_Demo/supply')} type="button" className="nav-link" >
+                                <a onClick={()=>navigate('/supply')} type="button" className="nav-link" >
                                     SERVICE
                                 </a>
                           
