@@ -19,6 +19,8 @@ function App() {
     client_id: 'song_client',
     redirect_uri: 'https://song812ads.github.io/Song_Product_Demo/user',
     post_logout_redirect_uri:'https://song812ads.github.io/Song_Product_Demo/user',
+    // redirect_uri: 'https://localhost:3000/Song_Product_Demo/user',
+    // post_logout_redirect_uri:'https://localhost:3000/Song_Product_Demo/user',
     response_type: 'code',
     resource_access: {
       "song_client": {
@@ -36,6 +38,8 @@ function App() {
     client_id: 'supply_client',
     redirect_uri: 'https://song812ads.github.io/Song_Product_Demo/supply',
     post_logout_redirect_uri:'https://song812ads.github.io/Song_Product_Demo',
+    // redirect_uri: 'https://localhost:3000/Song_Product_Demo/supply',
+    // post_logout_redirect_uri:'https://localhost:3000/Song_Product_Demo',
     response_type: 'code',
     resource_access: {
         "song_supply": {
@@ -51,11 +55,11 @@ function App() {
           <Routes>
             <Route path="" element={<Main />}/>
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
-            <Route path="/user/product" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
-            <Route path="/user/pay" element={<AuthProvider {...client_settings}><Thanhtoan/></AuthProvider>}/>
+            <Route path="/user/product/*" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
+            <Route path="/user/pay/*" element={<AuthProvider {...client_settings}><Thanhtoan/></AuthProvider>}/>
             <Route path="/supply" element = {<AuthProvider {...supply_settings}><SupplierPage /></AuthProvider>}/>
-            <Route path="/supply/product" element = {<AuthProvider {...supply_settings}><Product /></AuthProvider>}/>
-            <Route path="/supply/product/add" element = {<AuthProvider {...supply_settings}><Product_add /></AuthProvider>}/>
+            <Route path="/supply/product/*" element = {<AuthProvider {...supply_settings}><Product /></AuthProvider>}/>
+            <Route path="/supply/product/add/*" element = {<AuthProvider {...supply_settings}><Product_add /></AuthProvider>}/>
             <Route path="/supply/product/change/*" element = {<AuthProvider {...supply_settings}><Product_change /></AuthProvider>}/>
             {/* <Route path="/Song_Product_Demo/*" element={<Main />}/> */}
           </Routes>
