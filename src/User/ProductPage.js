@@ -38,7 +38,7 @@ const ProductPage = () => {
 
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item active">
-                    <a className="nav-link" role="button" onClick = {()=>navigate("../app")}>Home</a>
+                    <a className="nav-link" role="button" onClick = {()=>navigate("/Song_Product_Demo")}>Home</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" role="button" onClick = {()=>navigate("../user")}>User</a>

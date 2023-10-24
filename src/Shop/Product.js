@@ -54,8 +54,7 @@ const Product = () => {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + auth.user.access_token
-  }
-  }
+  }}
         await fetch('http://localhost:8060/product/all',request)
         .then((response)=>response.json())
         .then((response)=>{
@@ -83,10 +82,11 @@ if (auth.isLoading){
   }
 
 if (!auth.isAuthenticated){
-  navigate('../app')
+  navigate('../Song_Product_Demo')
 }
 
 if ((data === null) && (auth.isAuthenticated)){
+  setfetch(true)
   return <div>Fetching data ... </div>
 }
 

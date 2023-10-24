@@ -126,7 +126,7 @@ const Product = () => {
   
       async function myFetch(){
         if (!auth.isAuthenticated || (auth.isAuthenticated && jwtDecode(auth.user.access_token).resource_access.supply_client.roles.toString()!=='supply_client')){
-          navigate("../app")
+          navigate("/Song_Product_Demo")
           alert("Not In Supply Account")
       }
       }

@@ -33,8 +33,8 @@ function App() {
     client_secret: 'dgvVF4zg7mIa4NhK57mY7GOoNwxyGjUU',
     response_mode:'query',
     client_id: 'supply_client',
-    redirect_uri: 'https://song812ads.github.io/Song_Product_Demo/supply',
-    post_logout_redirect_uri:'https://song812ads.github.io/Song_Product_Demo/app',
+    redirect_uri: 'https://song812ads.github.io/supply',
+    post_logout_redirect_uri:'https://song812ads.github.io/Song_Product_Demo/',
     response_type: 'code',
     resource_access: {
         "song_supply": {
@@ -48,7 +48,7 @@ function App() {
     <div className="App">    
         <BrowserRouter> 
           <Routes>
-            <Route path="/app" element={<Main />}/>
+            <Route path="/Song_Product_Demo" element={<Main />}/>
             <Route path="/user/*" element = {<AuthProvider {...client_settings}><User /></AuthProvider>}/>
             <Route path="/user/product" element = {<AuthProvider {...client_settings}><ProductPage /></AuthProvider>}/>
             <Route path="/user/pay" element={<AuthProvider {...client_settings}><Thanhtoan/></AuthProvider>}/>

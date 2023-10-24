@@ -66,7 +66,7 @@ if ((data === null) && (auth.isAuthenticated)){
     <div className="container">
       <div className="row gy-3">
         <div className="col-lg-2 col-sm-4 col-4">
-          <h4 role="button" onClick = {()=>navigate("../app")}>
+          <h4 role="button" onClick = {()=>navigate("../Song_Product_Demo")}>
             SONG DEMO
           </h4>
         </div>
